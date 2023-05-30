@@ -80,6 +80,7 @@
             this.btn_Calc.TabIndex = 2;
             this.btn_Calc.Text = "CALCULAR";
             this.btn_Calc.UseVisualStyleBackColor = true;
+            this.btn_Calc.Click += new System.EventHandler(this.btn_Calc_Click);
             // 
             // btn_Limpar
             // 
