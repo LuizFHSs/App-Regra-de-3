@@ -1,0 +1,17 @@
+C:\Users\lf200\OneDrive\Área de Trabalho\Portifólio-GitHub\App-Regra-de-3\App_R3\bin\Debug\net6.0-windows\App_R3.exe
+C:\Users\lf200\OneDrive\Área de Trabalho\Portifólio-GitHub\App-Regra-de-3\App_R3\bin\Debug\net6.0-windows\App_R3.deps.json
+C:\Users\lf200\OneDrive\Área de Trabalho\Portifólio-GitHub\App-Regra-de-3\App_R3\bin\Debug\net6.0-windows\App_R3.runtimeconfig.json
+C:\Users\lf200\OneDrive\Área de Trabalho\Portifólio-GitHub\App-Regra-de-3\App_R3\bin\Debug\net6.0-windows\App_R3.dll
+C:\Users\lf200\OneDrive\Área de Trabalho\Portifólio-GitHub\App-Regra-de-3\App_R3\bin\Debug\net6.0-windows\App_R3.pdb
+C:\Users\lf200\OneDrive\Área de Trabalho\Portifólio-GitHub\App-Regra-de-3\App_R3\obj\Debug\net6.0-windows\App_R3.csproj.AssemblyReference.cache
+C:\Users\lf200\OneDrive\Área de Trabalho\Portifólio-GitHub\App-Regra-de-3\App_R3\obj\Debug\net6.0-windows\App_R3.Form1.resources
+C:\Users\lf200\OneDrive\Área de Trabalho\Portifólio-GitHub\App-Regra-de-3\App_R3\obj\Debug\net6.0-windows\App_R3.csproj.GenerateResource.cache
+C:\Users\lf200\OneDrive\Área de Trabalho\Portifólio-GitHub\App-Regra-de-3\App_R3\obj\Debug\net6.0-windows\App_R3.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\lf200\OneDrive\Área de Trabalho\Portifólio-GitHub\App-Regra-de-3\App_R3\obj\Debug\net6.0-windows\App_R3.AssemblyInfoInputs.cache
+C:\Users\lf200\OneDrive\Área de Trabalho\Portifólio-GitHub\App-Regra-de-3\App_R3\obj\Debug\net6.0-windows\App_R3.AssemblyInfo.cs
+C:\Users\lf200\OneDrive\Área de Trabalho\Portifólio-GitHub\App-Regra-de-3\App_R3\obj\Debug\net6.0-windows\App_R3.csproj.CoreCompileInputs.cache
+C:\Users\lf200\OneDrive\Área de Trabalho\Portifólio-GitHub\App-Regra-de-3\App_R3\obj\Debug\net6.0-windows\App_R3.dll
+C:\Users\lf200\OneDrive\Área de Trabalho\Portifólio-GitHub\App-Regra-de-3\App_R3\obj\Debug\net6.0-windows\refint\App_R3.dll
+C:\Users\lf200\OneDrive\Área de Trabalho\Portifólio-GitHub\App-Regra-de-3\App_R3\obj\Debug\net6.0-windows\App_R3.pdb
+C:\Users\lf200\OneDrive\Área de Trabalho\Portifólio-GitHub\App-Regra-de-3\App_R3\obj\Debug\net6.0-windows\App_R3.genruntimeconfig.cache
+C:\Users\lf200\OneDrive\Área de Trabalho\Portifólio-GitHub\App-Regra-de-3\App_R3\obj\Debug\net6.0-windows\ref\App_R3.dll
