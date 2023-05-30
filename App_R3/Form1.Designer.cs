@@ -47,6 +47,10 @@
             this.txt_GranA = new System.Windows.Forms.TextBox();
             this.txt_GranB = new System.Windows.Forms.TextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -71,6 +75,7 @@
             this.rb_Comp.TabStop = true;
             this.rb_Comp.Text = "Regra de três composta";
             this.rb_Comp.UseVisualStyleBackColor = true;
+            this.rb_Comp.CheckedChanged += new System.EventHandler(this.rb_Comp_CheckedChanged);
             // 
             // btn_Calc
             // 
@@ -87,7 +92,7 @@
             this.btn_Limpar.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.btn_Limpar.Location = new System.Drawing.Point(0, 244);
             this.btn_Limpar.Name = "btn_Limpar";
-            this.btn_Limpar.Size = new System.Drawing.Size(670, 23);
+            this.btn_Limpar.Size = new System.Drawing.Size(873, 23);
             this.btn_Limpar.TabIndex = 3;
             this.btn_Limpar.Text = "LIMPAR CAMPOS";
             this.btn_Limpar.UseVisualStyleBackColor = true;
@@ -223,11 +228,48 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "ADICIONAR NOME DAS GRANDEZAS";
             // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(737, 19);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(15, 15);
+            this.label3.TabIndex = 20;
+            this.label3.Text = "C";
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(737, 54);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(100, 23);
+            this.textBox1.TabIndex = 21;
+            // 
+            // textBox2
+            // 
+            this.textBox2.Location = new System.Drawing.Point(737, 136);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(100, 23);
+            this.textBox2.TabIndex = 22;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Segoe UI", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label6.Location = new System.Drawing.Point(680, 85);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(39, 45);
+            this.label6.TabIndex = 23;
+            this.label6.Text = "X";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(670, 267);
+            this.ClientSize = new System.Drawing.Size(873, 267);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.label3);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.lbl_result);
             this.Controls.Add(this.label2);
@@ -244,6 +286,7 @@
             this.Controls.Add(this.rb_simples);
             this.Name = "Form1";
             this.Text = "Regra de Três";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
@@ -272,5 +315,9 @@
         private TextBox txt_GranA;
         private TextBox txt_GranB;
         private GroupBox groupBox1;
+        private Label label3;
+        private TextBox textBox1;
+        private TextBox textBox2;
+        private Label label6;
     }
 }

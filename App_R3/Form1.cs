@@ -28,7 +28,31 @@ namespace App_R3
 
         private void btn_Calc_Click(object sender, EventArgs e)
         {
-         
+            Algoritmo_R3 _R3 = new();
+            lbl_result.Text = _R3.Simples(rb_simples.Checked, txt_value1.Text, txt_value2.Text, txt_value3.Text, txt_value4.Text).ToString();
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            if (!rb_Comp.Checked)
+            {
+                textBox1.Enabled = false;
+                textBox2.Enabled = false;
+            }
+        }
+
+        private void rb_Comp_CheckedChanged(object sender, EventArgs e)
+        {
+            if(rb_Comp.Checked)
+            {
+                textBox1.Enabled = true;
+                textBox2.Enabled = true;
+            }
+            else
+            {
+                textBox1.Enabled = false;
+                textBox2.Enabled = false;
+            }
         }
     }
 }

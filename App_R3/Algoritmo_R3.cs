@@ -16,7 +16,7 @@ namespace App_R3
          *      3. [X] Realizar calculo e retornar o resultado
          */
 
-        public float R3_Simples(bool regra, string v1, string v2, string v3, string v4)
+        public float Simples(bool regra, string v1, string v2, string v3, string v4)
         {
             float value4 = 0;
             float mult1;
@@ -33,7 +33,7 @@ namespace App_R3
             {
                 mult1 = float.Parse(v2)*float.Parse(v3);
                 mult2 = float.Parse(v1) * value4;
-                div = mult2 / mult1;
+                div = mult1 / mult2;
                 result = div;
             }
             return result;
