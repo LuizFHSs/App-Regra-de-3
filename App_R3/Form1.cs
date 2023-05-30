@@ -11,6 +11,13 @@ namespace App_R3
         {
             lbl_GranA.Text = txt_GranA.Text;
             lbl_GranB.Text = txt_GranB.Text;
+            txt_GranA.Clear();
+            txt_GranB.Clear();
+        }
+
+        private void btn_Limpar_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

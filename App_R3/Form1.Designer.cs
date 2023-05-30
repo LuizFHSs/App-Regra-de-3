@@ -90,6 +90,7 @@
             this.btn_Limpar.TabIndex = 3;
             this.btn_Limpar.Text = "LIMPAR CAMPOS";
             this.btn_Limpar.UseVisualStyleBackColor = true;
+            this.btn_Limpar.Click += new System.EventHandler(this.btn_Limpar_Click);
             // 
             // lbl_GranA
             // 
