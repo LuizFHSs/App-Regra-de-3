@@ -17,7 +17,11 @@ namespace App_R3
 
         private void btn_Limpar_Click(object sender, EventArgs e)
         {
-
+            txt_value1.Clear();
+            txt_value2.Clear();
+            txt_value3.Clear();
+            txt_value4.Clear();
+            lbl_result.Text = "0";
         }
     }
 }
