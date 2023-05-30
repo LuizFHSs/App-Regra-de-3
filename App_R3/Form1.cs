@@ -21,7 +21,14 @@ namespace App_R3
             txt_value2.Clear();
             txt_value3.Clear();
             txt_value4.Clear();
+            lbl_GranA.Text = "A";
+            lbl_GranB.Text = "B";
             lbl_result.Text = "0";
+        }
+
+        private void btn_Calc_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
