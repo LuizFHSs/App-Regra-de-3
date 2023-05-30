@@ -28,7 +28,7 @@ namespace App_R3
 
         private void btn_Calc_Click(object sender, EventArgs e)
         {
-
+         
         }
     }
 }
