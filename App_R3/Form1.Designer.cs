@@ -28,8 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.rb_simples = new System.Windows.Forms.RadioButton();
-            this.rb_Comp = new System.Windows.Forms.RadioButton();
             this.btn_Calc = new System.Windows.Forms.Button();
             this.btn_Limpar = new System.Windows.Forms.Button();
             this.lbl_GranA = new System.Windows.Forms.Label();
@@ -55,37 +53,13 @@
             this.label6 = new System.Windows.Forms.Label();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.tabPage2 = new System.Windows.Forms.TabPage();
             this.rb_I = new System.Windows.Forms.RadioButton();
             this.rb_D = new System.Windows.Forms.RadioButton();
+            this.tabPage2 = new System.Windows.Forms.TabPage();
             this.groupBox1.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
-            this.tabPage2.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // rb_simples
-            // 
-            this.rb_simples.AutoSize = true;
-            this.rb_simples.Checked = true;
-            this.rb_simples.Location = new System.Drawing.Point(6, 6);
-            this.rb_simples.Name = "rb_simples";
-            this.rb_simples.Size = new System.Drawing.Size(136, 19);
-            this.rb_simples.TabIndex = 0;
-            this.rb_simples.TabStop = true;
-            this.rb_simples.Text = "Regra de três simples";
-            this.rb_simples.UseVisualStyleBackColor = true;
-            // 
-            // rb_Comp
-            // 
-            this.rb_Comp.AutoSize = true;
-            this.rb_Comp.Location = new System.Drawing.Point(6, 31);
-            this.rb_Comp.Name = "rb_Comp";
-            this.rb_Comp.Size = new System.Drawing.Size(149, 19);
-            this.rb_Comp.TabIndex = 1;
-            this.rb_Comp.Text = "Regra de três composta";
-            this.rb_Comp.UseVisualStyleBackColor = true;
-            this.rb_Comp.CheckedChanged += new System.EventHandler(this.rb_Comp_CheckedChanged);
             // 
             // btn_Calc
             // 
@@ -298,30 +272,19 @@
             this.tabControl1.SelectedIndex = 0;
             this.tabControl1.Size = new System.Drawing.Size(198, 87);
             this.tabControl1.TabIndex = 24;
+            this.tabControl1.SelectedIndexChanged += new System.EventHandler(this.tabControl1_SelectedIndexChanged);
             // 
             // tabPage1
             // 
-            this.tabPage1.Controls.Add(this.rb_simples);
-            this.tabPage1.Controls.Add(this.rb_Comp);
+            this.tabPage1.Controls.Add(this.rb_I);
+            this.tabPage1.Controls.Add(this.rb_D);
             this.tabPage1.Location = new System.Drawing.Point(4, 24);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
             this.tabPage1.Size = new System.Drawing.Size(190, 59);
             this.tabPage1.TabIndex = 0;
-            this.tabPage1.Text = "Simples|Composta";
+            this.tabPage1.Text = "Simples";
             this.tabPage1.UseVisualStyleBackColor = true;
-            // 
-            // tabPage2
-            // 
-            this.tabPage2.Controls.Add(this.rb_I);
-            this.tabPage2.Controls.Add(this.rb_D);
-            this.tabPage2.Location = new System.Drawing.Point(4, 24);
-            this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(190, 59);
-            this.tabPage2.TabIndex = 1;
-            this.tabPage2.Text = "Direta|Inversa";
-            this.tabPage2.UseVisualStyleBackColor = true;
             // 
             // rb_I
             // 
@@ -344,6 +307,16 @@
             this.rb_D.TabStop = true;
             this.rb_D.Text = "Diretamente Proporcional";
             this.rb_D.UseVisualStyleBackColor = true;
+            // 
+            // tabPage2
+            // 
+            this.tabPage2.Location = new System.Drawing.Point(4, 24);
+            this.tabPage2.Name = "tabPage2";
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage2.Size = new System.Drawing.Size(190, 59);
+            this.tabPage2.TabIndex = 1;
+            this.tabPage2.Text = "Composta";
+            this.tabPage2.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
@@ -375,17 +348,12 @@
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.tabPage1.PerformLayout();
-            this.tabPage2.ResumeLayout(false);
-            this.tabPage2.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private RadioButton rb_simples;
-        private RadioButton rb_Comp;
         private Button btn_Calc;
         private Button btn_Limpar;
         private Label lbl_GranA;
