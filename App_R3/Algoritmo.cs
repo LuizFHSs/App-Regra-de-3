@@ -18,8 +18,8 @@ namespace App_R3
 
         public float Simples(bool[] regra, string v1, string v2, string v3, string v4)
         {
-            float value3 = 0;
-            float value4 = 0;
+            float value3 = 1;
+            float value4 = 1;
             float mult1;
             float mult2;
             float div;
@@ -28,7 +28,6 @@ namespace App_R3
             // regra de tres simples direta
             if (v4 == "x" && regra[0]) 
             {
-                value4 = 1;
                 mult1 = float.Parse(v1) * value4;
                 mult2 = float.Parse(v2) * float.Parse(v3);
                 div = mult2 / mult1;
@@ -38,7 +37,6 @@ namespace App_R3
             {
                 if(v3 == "x" && regra[0])
                 {
-                    value3 = 1;
                     mult1 = float.Parse(v2) * value3;
                     mult2 = float.Parse(v1) * float.Parse(v4);
                     div = mult2 / mult1;
@@ -49,7 +47,6 @@ namespace App_R3
             // regra de tres simples inversa
             if (v4 == "x" && regra[1]) 
             {
-                value4 = 1;
                 mult1 = float.Parse(v3) * value4;
                 mult2 = float.Parse(v1) * float.Parse(v2);
                 div = mult2 / mult1;
@@ -59,7 +56,6 @@ namespace App_R3
             {
                 if(v3 == "x" && regra[1]) 
                 {
-                    value3 = 1;
                     mult1 = float.Parse(v4) * value3;
                     mult2 = float.Parse(v1) * float.Parse(v2);
                     div = mult2 / mult1;
@@ -76,6 +72,12 @@ namespace App_R3
             float mult2;
             float div;
             float result = 0;
+
+            if(v4.ToLower() == "x")
+            {
+
+            }
+
 
             return result;
         }
