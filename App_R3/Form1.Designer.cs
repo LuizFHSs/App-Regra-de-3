@@ -37,8 +37,8 @@
             this.btn_AddGran = new System.Windows.Forms.Button();
             this.txt_value1 = new System.Windows.Forms.TextBox();
             this.txt_value2 = new System.Windows.Forms.TextBox();
-            this.txt_value3 = new System.Windows.Forms.TextBox();
             this.txt_value4 = new System.Windows.Forms.TextBox();
+            this.txt_value5 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.lbl_result = new System.Windows.Forms.Label();
@@ -47,9 +47,11 @@
             this.txt_GranA = new System.Windows.Forms.TextBox();
             this.txt_GranB = new System.Windows.Forms.TextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txt_GranC = new System.Windows.Forms.TextBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.lbl_GranC = new System.Windows.Forms.Label();
+            this.txt_value3 = new System.Windows.Forms.TextBox();
+            this.txt_value6 = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -57,6 +59,7 @@
             // rb_simples
             // 
             this.rb_simples.AutoSize = true;
+            this.rb_simples.Checked = true;
             this.rb_simples.Location = new System.Drawing.Point(12, 20);
             this.rb_simples.Name = "rb_simples";
             this.rb_simples.Size = new System.Drawing.Size(136, 19);
@@ -72,7 +75,6 @@
             this.rb_Comp.Name = "rb_Comp";
             this.rb_Comp.Size = new System.Drawing.Size(149, 19);
             this.rb_Comp.TabIndex = 1;
-            this.rb_Comp.TabStop = true;
             this.rb_Comp.Text = "Regra de três composta";
             this.rb_Comp.UseVisualStyleBackColor = true;
             this.rb_Comp.CheckedChanged += new System.EventHandler(this.rb_Comp_CheckedChanged);
@@ -90,7 +92,7 @@
             // btn_Limpar
             // 
             this.btn_Limpar.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.btn_Limpar.Location = new System.Drawing.Point(0, 244);
+            this.btn_Limpar.Location = new System.Drawing.Point(0, 333);
             this.btn_Limpar.Name = "btn_Limpar";
             this.btn_Limpar.Size = new System.Drawing.Size(873, 23);
             this.btn_Limpar.TabIndex = 3;
@@ -118,7 +120,7 @@
             // 
             // btn_AddGran
             // 
-            this.btn_AddGran.Location = new System.Drawing.Point(71, 106);
+            this.btn_AddGran.Location = new System.Drawing.Point(71, 139);
             this.btn_AddGran.Name = "btn_AddGran";
             this.btn_AddGran.Size = new System.Drawing.Size(88, 23);
             this.btn_AddGran.TabIndex = 6;
@@ -140,19 +142,19 @@
             this.txt_value2.Size = new System.Drawing.Size(100, 23);
             this.txt_value2.TabIndex = 8;
             // 
-            // txt_value3
-            // 
-            this.txt_value3.Location = new System.Drawing.Point(374, 136);
-            this.txt_value3.Name = "txt_value3";
-            this.txt_value3.Size = new System.Drawing.Size(100, 23);
-            this.txt_value3.TabIndex = 9;
-            // 
             // txt_value4
             // 
-            this.txt_value4.Location = new System.Drawing.Point(558, 136);
+            this.txt_value4.Location = new System.Drawing.Point(374, 136);
             this.txt_value4.Name = "txt_value4";
             this.txt_value4.Size = new System.Drawing.Size(100, 23);
-            this.txt_value4.TabIndex = 10;
+            this.txt_value4.TabIndex = 9;
+            // 
+            // txt_value5
+            // 
+            this.txt_value5.Location = new System.Drawing.Point(558, 136);
+            this.txt_value5.Name = "txt_value5";
+            this.txt_value5.Size = new System.Drawing.Size(100, 23);
+            this.txt_value5.TabIndex = 10;
             // 
             // label1
             // 
@@ -167,7 +169,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(516, 204);
+            this.label2.Location = new System.Drawing.Point(743, 208);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(75, 15);
             this.label2.TabIndex = 12;
@@ -176,7 +178,7 @@
             // lbl_result
             // 
             this.lbl_result.AutoSize = true;
-            this.lbl_result.Location = new System.Drawing.Point(597, 204);
+            this.lbl_result.Location = new System.Drawing.Point(824, 208);
             this.lbl_result.Name = "lbl_result";
             this.lbl_result.Size = new System.Drawing.Size(13, 15);
             this.lbl_result.TabIndex = 13;
@@ -185,7 +187,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(50, 27);
+            this.label4.Location = new System.Drawing.Point(51, 27);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(15, 15);
             this.label4.TabIndex = 15;
@@ -216,6 +218,8 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.txt_GranC);
+            this.groupBox1.Controls.Add(this.label7);
             this.groupBox1.Controls.Add(this.txt_GranA);
             this.groupBox1.Controls.Add(this.txt_GranB);
             this.groupBox1.Controls.Add(this.btn_AddGran);
@@ -223,33 +227,49 @@
             this.groupBox1.Controls.Add(this.label5);
             this.groupBox1.Location = new System.Drawing.Point(12, 69);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(221, 150);
+            this.groupBox1.Size = new System.Drawing.Size(221, 179);
             this.groupBox1.TabIndex = 19;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "ADICIONAR NOME DAS GRANDEZAS";
             // 
-            // label3
+            // txt_GranC
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(737, 19);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(15, 15);
-            this.label3.TabIndex = 20;
-            this.label3.Text = "C";
+            this.txt_GranC.Location = new System.Drawing.Point(71, 100);
+            this.txt_GranC.Name = "txt_GranC";
+            this.txt_GranC.Size = new System.Drawing.Size(100, 23);
+            this.txt_GranC.TabIndex = 25;
             // 
-            // textBox1
+            // label7
             // 
-            this.textBox1.Location = new System.Drawing.Point(737, 54);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 23);
-            this.textBox1.TabIndex = 21;
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(51, 103);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(15, 15);
+            this.label7.TabIndex = 24;
+            this.label7.Text = "C";
             // 
-            // textBox2
+            // lbl_GranC
             // 
-            this.textBox2.Location = new System.Drawing.Point(737, 136);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 23);
-            this.textBox2.TabIndex = 22;
+            this.lbl_GranC.AutoSize = true;
+            this.lbl_GranC.Location = new System.Drawing.Point(737, 19);
+            this.lbl_GranC.Name = "lbl_GranC";
+            this.lbl_GranC.Size = new System.Drawing.Size(15, 15);
+            this.lbl_GranC.TabIndex = 20;
+            this.lbl_GranC.Text = "C";
+            // 
+            // txt_value3
+            // 
+            this.txt_value3.Location = new System.Drawing.Point(737, 54);
+            this.txt_value3.Name = "txt_value3";
+            this.txt_value3.Size = new System.Drawing.Size(100, 23);
+            this.txt_value3.TabIndex = 21;
+            // 
+            // txt_value6
+            // 
+            this.txt_value6.Location = new System.Drawing.Point(737, 136);
+            this.txt_value6.Name = "txt_value6";
+            this.txt_value6.Size = new System.Drawing.Size(100, 23);
+            this.txt_value6.TabIndex = 22;
             // 
             // label6
             // 
@@ -265,17 +285,17 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(873, 267);
+            this.ClientSize = new System.Drawing.Size(873, 356);
             this.Controls.Add(this.label6);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.label3);
+            this.Controls.Add(this.txt_value6);
+            this.Controls.Add(this.txt_value3);
+            this.Controls.Add(this.lbl_GranC);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.lbl_result);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
+            this.Controls.Add(this.txt_value5);
             this.Controls.Add(this.txt_value4);
-            this.Controls.Add(this.txt_value3);
             this.Controls.Add(this.txt_value2);
             this.Controls.Add(this.txt_value1);
             this.Controls.Add(this.lbl_GranB);
@@ -305,8 +325,8 @@
         private Button btn_AddGran;
         private TextBox txt_value1;
         private TextBox txt_value2;
-        private TextBox txt_value3;
         private TextBox txt_value4;
+        private TextBox txt_value5;
         private Label label1;
         private Label label2;
         private Label lbl_result;
@@ -315,9 +335,11 @@
         private TextBox txt_GranA;
         private TextBox txt_GranB;
         private GroupBox groupBox1;
-        private Label label3;
-        private TextBox textBox1;
-        private TextBox textBox2;
+        private Label lbl_GranC;
+        private TextBox txt_value3;
+        private TextBox txt_value6;
         private Label label6;
+        private Label label7;
+        private TextBox txt_GranC;
     }
 }
