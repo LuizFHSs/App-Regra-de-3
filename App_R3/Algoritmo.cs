@@ -25,7 +25,8 @@ namespace App_R3
             float div;
             float result = 0;
 
-            if (v4 == "x" && regra[0]) // regra de tres simples direta
+            // regra de tres simples direta
+            if (v4 == "x" && regra[0]) 
             {
                 value4 = 1;
                 mult1 = float.Parse(v1) * value4;
@@ -45,7 +46,8 @@ namespace App_R3
                 }
             }
 
-            if(v4 == "x" && regra[1]) // regra de tres simples inversa
+            // regra de tres simples inversa
+            if (v4 == "x" && regra[1]) 
             {
                 value4 = 1;
                 mult1 = float.Parse(v3) * value4;

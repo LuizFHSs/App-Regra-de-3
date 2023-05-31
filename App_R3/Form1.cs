@@ -11,7 +11,14 @@ namespace App_R3
         {
             lbl_GranA.Text = txt_GranA.Text;
             lbl_GranB.Text = txt_GranB.Text;
-            lbl_GranC.Text = txt_GranC.Text;
+            if (txt_GranC.Text == "")
+            {
+                lbl_GranC.Text = "C";
+            }
+            else
+            {
+                lbl_GranC.Text = txt_GranC.Text;
+            }
             txt_GranA.Clear();
             txt_GranB.Clear();
             txt_GranC.Clear();
