@@ -42,45 +42,43 @@ namespace App_R3
         {
             bool[] state = { rb_D.Checked, rb_I.Checked };
             Algoritmo _R3 = new();
-            if(rb_simples.Checked)
+            
+            if(tabControl1.SelectedIndex == 0)
             {
                 lbl_result.Text = _R3.Simples(state, txt_value1.Text, txt_value2.Text, txt_value4.Text, txt_value5.Text).ToString();
             }
+            
         }
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            if(rb_simples.Checked)
+            if (tabControl1.SelectedIndex == 0)
             {
                 txt_GranC.Enabled = false;
                 lbl_GranC2.Enabled = false;
-            }
-            if (!rb_Comp.Checked)
-            {
                 lbl_GranC.Enabled = false;
-                lbl_GranC2.Enabled = false;
                 txt_value3.Enabled = false;
                 txt_value6.Enabled = false;
             }
         }
 
-        private void rb_Comp_CheckedChanged(object sender, EventArgs e)
+        private void tabControl1_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if(rb_Comp.Checked)
+            if(tabControl1.SelectedIndex == 0)
+            {
+                txt_GranC.Enabled = false;
+                lbl_GranC2.Enabled = false;
+                lbl_GranC.Enabled = false;
+                txt_value3.Enabled = false;
+                txt_value6.Enabled = false;
+            }
+            else
             {
                 txt_value3.Enabled = true;
                 txt_value6.Enabled = true;
                 txt_GranC.Enabled = true;
                 lbl_GranC.Enabled = true;
                 lbl_GranC2.Enabled = true;
-            }
-            else
-            {
-                lbl_GranC.Enabled = false;
-                lbl_GranC2.Enabled = false;
-                txt_value3.Enabled = false;
-                txt_value6.Enabled = false;
-                txt_GranC.Enabled = false;
             }
         }
     }
