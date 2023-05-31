@@ -48,19 +48,27 @@
             this.txt_GranB = new System.Windows.Forms.TextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.txt_GranC = new System.Windows.Forms.TextBox();
-            this.label7 = new System.Windows.Forms.Label();
+            this.lbl_GranC2 = new System.Windows.Forms.Label();
             this.lbl_GranC = new System.Windows.Forms.Label();
             this.txt_value3 = new System.Windows.Forms.TextBox();
             this.txt_value6 = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
+            this.tabControl1 = new System.Windows.Forms.TabControl();
+            this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.rb_D = new System.Windows.Forms.RadioButton();
+            this.rb_I = new System.Windows.Forms.RadioButton();
             this.groupBox1.SuspendLayout();
+            this.tabControl1.SuspendLayout();
+            this.tabPage1.SuspendLayout();
+            this.tabPage2.SuspendLayout();
             this.SuspendLayout();
             // 
             // rb_simples
             // 
             this.rb_simples.AutoSize = true;
             this.rb_simples.Checked = true;
-            this.rb_simples.Location = new System.Drawing.Point(12, 20);
+            this.rb_simples.Location = new System.Drawing.Point(6, 6);
             this.rb_simples.Name = "rb_simples";
             this.rb_simples.Size = new System.Drawing.Size(136, 19);
             this.rb_simples.TabIndex = 0;
@@ -71,7 +79,7 @@
             // rb_Comp
             // 
             this.rb_Comp.AutoSize = true;
-            this.rb_Comp.Location = new System.Drawing.Point(154, 20);
+            this.rb_Comp.Location = new System.Drawing.Point(6, 31);
             this.rb_Comp.Name = "rb_Comp";
             this.rb_Comp.Size = new System.Drawing.Size(149, 19);
             this.rb_Comp.TabIndex = 1;
@@ -92,7 +100,7 @@
             // btn_Limpar
             // 
             this.btn_Limpar.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.btn_Limpar.Location = new System.Drawing.Point(0, 333);
+            this.btn_Limpar.Location = new System.Drawing.Point(0, 434);
             this.btn_Limpar.Name = "btn_Limpar";
             this.btn_Limpar.Size = new System.Drawing.Size(873, 23);
             this.btn_Limpar.TabIndex = 3;
@@ -219,13 +227,13 @@
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.txt_GranC);
-            this.groupBox1.Controls.Add(this.label7);
+            this.groupBox1.Controls.Add(this.lbl_GranC2);
             this.groupBox1.Controls.Add(this.txt_GranA);
             this.groupBox1.Controls.Add(this.txt_GranB);
             this.groupBox1.Controls.Add(this.btn_AddGran);
             this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Controls.Add(this.label5);
-            this.groupBox1.Location = new System.Drawing.Point(12, 69);
+            this.groupBox1.Location = new System.Drawing.Point(12, 219);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(221, 179);
             this.groupBox1.TabIndex = 19;
@@ -239,14 +247,14 @@
             this.txt_GranC.Size = new System.Drawing.Size(100, 23);
             this.txt_GranC.TabIndex = 25;
             // 
-            // label7
+            // lbl_GranC2
             // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(51, 103);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(15, 15);
-            this.label7.TabIndex = 24;
-            this.label7.Text = "C";
+            this.lbl_GranC2.AutoSize = true;
+            this.lbl_GranC2.Location = new System.Drawing.Point(51, 103);
+            this.lbl_GranC2.Name = "lbl_GranC2";
+            this.lbl_GranC2.Size = new System.Drawing.Size(15, 15);
+            this.lbl_GranC2.TabIndex = 24;
+            this.lbl_GranC2.Text = "C";
             // 
             // lbl_GranC
             // 
@@ -281,11 +289,68 @@
             this.label6.TabIndex = 23;
             this.label6.Text = "X";
             // 
+            // tabControl1
+            // 
+            this.tabControl1.Controls.Add(this.tabPage1);
+            this.tabControl1.Controls.Add(this.tabPage2);
+            this.tabControl1.Location = new System.Drawing.Point(12, 12);
+            this.tabControl1.Name = "tabControl1";
+            this.tabControl1.SelectedIndex = 0;
+            this.tabControl1.Size = new System.Drawing.Size(198, 87);
+            this.tabControl1.TabIndex = 24;
+            // 
+            // tabPage1
+            // 
+            this.tabPage1.Controls.Add(this.rb_simples);
+            this.tabPage1.Controls.Add(this.rb_Comp);
+            this.tabPage1.Location = new System.Drawing.Point(4, 24);
+            this.tabPage1.Name = "tabPage1";
+            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage1.Size = new System.Drawing.Size(190, 59);
+            this.tabPage1.TabIndex = 0;
+            this.tabPage1.Text = "Simples|Composta";
+            this.tabPage1.UseVisualStyleBackColor = true;
+            // 
+            // tabPage2
+            // 
+            this.tabPage2.Controls.Add(this.rb_I);
+            this.tabPage2.Controls.Add(this.rb_D);
+            this.tabPage2.Location = new System.Drawing.Point(4, 24);
+            this.tabPage2.Name = "tabPage2";
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage2.Size = new System.Drawing.Size(190, 59);
+            this.tabPage2.TabIndex = 1;
+            this.tabPage2.Text = "Direta|Inversa";
+            this.tabPage2.UseVisualStyleBackColor = true;
+            // 
+            // rb_D
+            // 
+            this.rb_D.AutoSize = true;
+            this.rb_D.Checked = true;
+            this.rb_D.Location = new System.Drawing.Point(6, 6);
+            this.rb_D.Name = "rb_D";
+            this.rb_D.Size = new System.Drawing.Size(161, 19);
+            this.rb_D.TabIndex = 0;
+            this.rb_D.TabStop = true;
+            this.rb_D.Text = "Diretamente Proporcional";
+            this.rb_D.UseVisualStyleBackColor = true;
+            // 
+            // rb_I
+            // 
+            this.rb_I.AutoSize = true;
+            this.rb_I.Location = new System.Drawing.Point(6, 31);
+            this.rb_I.Name = "rb_I";
+            this.rb_I.Size = new System.Drawing.Size(167, 19);
+            this.rb_I.TabIndex = 1;
+            this.rb_I.Text = "Inversamente Proporcional";
+            this.rb_I.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(873, 356);
+            this.ClientSize = new System.Drawing.Size(873, 457);
+            this.Controls.Add(this.tabControl1);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.txt_value6);
             this.Controls.Add(this.txt_value3);
@@ -302,13 +367,16 @@
             this.Controls.Add(this.lbl_GranA);
             this.Controls.Add(this.btn_Limpar);
             this.Controls.Add(this.btn_Calc);
-            this.Controls.Add(this.rb_Comp);
-            this.Controls.Add(this.rb_simples);
             this.Name = "Form1";
             this.Text = "Regra de Três";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            this.tabControl1.ResumeLayout(false);
+            this.tabPage1.ResumeLayout(false);
+            this.tabPage1.PerformLayout();
+            this.tabPage2.ResumeLayout(false);
+            this.tabPage2.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -339,7 +407,12 @@
         private TextBox txt_value3;
         private TextBox txt_value6;
         private Label label6;
-        private Label label7;
+        private Label lbl_GranC2;
         private TextBox txt_GranC;
+        private TabControl tabControl1;
+        private TabPage tabPage1;
+        private TabPage tabPage2;
+        private RadioButton rb_D;
+        private RadioButton rb_I;
     }
 }

@@ -27,13 +27,18 @@ namespace App_R3
             txt_value6.Clear();
             lbl_GranA.Text = "A";
             lbl_GranB.Text = "B";
+            lbl_GranC.Text = "C";
             lbl_result.Text = "0";
         }
 
         private void btn_Calc_Click(object sender, EventArgs e)
         {
+            bool[] state = { rb_D.Checked, rb_I.Checked };
             Algoritmo_R3 _R3 = new();
-            lbl_result.Text = _R3.Simples(rb_simples.Checked, txt_value1.Text, txt_value2.Text, txt_value4.Text, txt_value5.Text).ToString();
+            if(rb_simples.Checked)
+            {
+                lbl_result.Text = _R3.Simples(state, txt_value1.Text, txt_value2.Text, txt_value4.Text, txt_value5.Text).ToString();
+            }
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -41,9 +46,12 @@ namespace App_R3
             if(rb_simples.Checked)
             {
                 txt_GranC.Enabled = false;
+                lbl_GranC2.Enabled = false;
             }
             if (!rb_Comp.Checked)
             {
+                lbl_GranC.Enabled = false;
+                lbl_GranC2.Enabled = false;
                 txt_value3.Enabled = false;
                 txt_value6.Enabled = false;
             }
@@ -56,9 +64,13 @@ namespace App_R3
                 txt_value3.Enabled = true;
                 txt_value6.Enabled = true;
                 txt_GranC.Enabled = true;
+                lbl_GranC.Enabled = true;
+                lbl_GranC2.Enabled = true;
             }
             else
             {
+                lbl_GranC.Enabled = false;
+                lbl_GranC2.Enabled = false;
                 txt_value3.Enabled = false;
                 txt_value6.Enabled = false;
                 txt_GranC.Enabled = false;

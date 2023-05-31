@@ -16,7 +16,7 @@ namespace App_R3
          *      3. [X] Realizar calculo e retornar o resultado
          */
 
-        public float Simples(bool regra, string v1, string v2, string v3, string v4)
+        public float Simples(bool[] regra, string v1, string v2, string v3, string v4)
         {
             float value4 = 0;
             float mult1;
@@ -29,13 +29,34 @@ namespace App_R3
                 value4 = 1;
             }
 
-            if (regra)
+            if (regra[0])
             {
-                mult1 = float.Parse(v2)*float.Parse(v3);
-                mult2 = float.Parse(v1) * value4;
-                div = mult1 / mult2;
-                result = div;
+                mult1 = float.Parse(v1) * value4;
+                mult2 = float.Parse(v2) * float.Parse(v3);
+                div = mult2 / mult1;
+                result = div; 
             }
+            else
+            {
+                if(regra[1])
+                {
+                    mult1 = float.Parse(v3) * value4;
+                    mult2 = float.Parse(v1) * float.Parse(v2);
+                    div = mult2 / mult1;
+                    result = div; 
+                }
+            }
+            return result;
+        }
+
+        public float Composta(bool regra, string v1, string v2, string v3, string v4, string v5, string v6)
+        {
+            float value4 = 0;
+            float mult1;
+            float mult2;
+            float div;
+            float result = 0;
+
             return result;
         }
     }
