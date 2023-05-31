@@ -89,7 +89,7 @@
             // 
             // btn_Calc
             // 
-            this.btn_Calc.Location = new System.Drawing.Point(374, 200);
+            this.btn_Calc.Location = new System.Drawing.Point(374, 260);
             this.btn_Calc.Name = "btn_Calc";
             this.btn_Calc.Size = new System.Drawing.Size(75, 23);
             this.btn_Calc.TabIndex = 2;
@@ -100,7 +100,7 @@
             // btn_Limpar
             // 
             this.btn_Limpar.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.btn_Limpar.Location = new System.Drawing.Point(0, 434);
+            this.btn_Limpar.Location = new System.Drawing.Point(0, 320);
             this.btn_Limpar.Name = "btn_Limpar";
             this.btn_Limpar.Size = new System.Drawing.Size(873, 23);
             this.btn_Limpar.TabIndex = 3;
@@ -111,7 +111,7 @@
             // lbl_GranA
             // 
             this.lbl_GranA.AutoSize = true;
-            this.lbl_GranA.Location = new System.Drawing.Point(374, 19);
+            this.lbl_GranA.Location = new System.Drawing.Point(290, 61);
             this.lbl_GranA.Name = "lbl_GranA";
             this.lbl_GranA.Size = new System.Drawing.Size(15, 15);
             this.lbl_GranA.TabIndex = 4;
@@ -120,7 +120,7 @@
             // lbl_GranB
             // 
             this.lbl_GranB.AutoSize = true;
-            this.lbl_GranB.Location = new System.Drawing.Point(558, 19);
+            this.lbl_GranB.Location = new System.Drawing.Point(474, 61);
             this.lbl_GranB.Name = "lbl_GranB";
             this.lbl_GranB.Size = new System.Drawing.Size(14, 15);
             this.lbl_GranB.TabIndex = 5;
@@ -138,28 +138,28 @@
             // 
             // txt_value1
             // 
-            this.txt_value1.Location = new System.Drawing.Point(374, 54);
+            this.txt_value1.Location = new System.Drawing.Point(290, 96);
             this.txt_value1.Name = "txt_value1";
             this.txt_value1.Size = new System.Drawing.Size(100, 23);
             this.txt_value1.TabIndex = 7;
             // 
             // txt_value2
             // 
-            this.txt_value2.Location = new System.Drawing.Point(558, 54);
+            this.txt_value2.Location = new System.Drawing.Point(474, 96);
             this.txt_value2.Name = "txt_value2";
             this.txt_value2.Size = new System.Drawing.Size(100, 23);
             this.txt_value2.TabIndex = 8;
             // 
             // txt_value4
             // 
-            this.txt_value4.Location = new System.Drawing.Point(374, 136);
+            this.txt_value4.Location = new System.Drawing.Point(290, 178);
             this.txt_value4.Name = "txt_value4";
             this.txt_value4.Size = new System.Drawing.Size(100, 23);
             this.txt_value4.TabIndex = 9;
             // 
             // txt_value5
             // 
-            this.txt_value5.Location = new System.Drawing.Point(558, 136);
+            this.txt_value5.Location = new System.Drawing.Point(474, 178);
             this.txt_value5.Name = "txt_value5";
             this.txt_value5.Size = new System.Drawing.Size(100, 23);
             this.txt_value5.TabIndex = 10;
@@ -168,7 +168,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label1.Location = new System.Drawing.Point(491, 85);
+            this.label1.Location = new System.Drawing.Point(407, 127);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(39, 45);
             this.label1.TabIndex = 11;
@@ -177,7 +177,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(517, 204);
+            this.label2.Location = new System.Drawing.Point(517, 264);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(75, 15);
             this.label2.TabIndex = 12;
@@ -186,7 +186,7 @@
             // lbl_result
             // 
             this.lbl_result.AutoSize = true;
-            this.lbl_result.Location = new System.Drawing.Point(598, 204);
+            this.lbl_result.Location = new System.Drawing.Point(598, 264);
             this.lbl_result.Name = "lbl_result";
             this.lbl_result.Size = new System.Drawing.Size(13, 15);
             this.lbl_result.TabIndex = 13;
@@ -233,7 +233,7 @@
             this.groupBox1.Controls.Add(this.btn_AddGran);
             this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Controls.Add(this.label5);
-            this.groupBox1.Location = new System.Drawing.Point(12, 219);
+            this.groupBox1.Location = new System.Drawing.Point(12, 121);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(221, 179);
             this.groupBox1.TabIndex = 19;
@@ -259,7 +259,7 @@
             // lbl_GranC
             // 
             this.lbl_GranC.AutoSize = true;
-            this.lbl_GranC.Location = new System.Drawing.Point(737, 19);
+            this.lbl_GranC.Location = new System.Drawing.Point(653, 61);
             this.lbl_GranC.Name = "lbl_GranC";
             this.lbl_GranC.Size = new System.Drawing.Size(15, 15);
             this.lbl_GranC.TabIndex = 20;
@@ -267,14 +267,14 @@
             // 
             // txt_value3
             // 
-            this.txt_value3.Location = new System.Drawing.Point(737, 54);
+            this.txt_value3.Location = new System.Drawing.Point(653, 96);
             this.txt_value3.Name = "txt_value3";
             this.txt_value3.Size = new System.Drawing.Size(100, 23);
             this.txt_value3.TabIndex = 21;
             // 
             // txt_value6
             // 
-            this.txt_value6.Location = new System.Drawing.Point(737, 136);
+            this.txt_value6.Location = new System.Drawing.Point(653, 178);
             this.txt_value6.Name = "txt_value6";
             this.txt_value6.Size = new System.Drawing.Size(100, 23);
             this.txt_value6.TabIndex = 22;
@@ -283,7 +283,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Segoe UI", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label6.Location = new System.Drawing.Point(680, 85);
+            this.label6.Location = new System.Drawing.Point(596, 127);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(39, 45);
             this.label6.TabIndex = 23;
@@ -349,7 +349,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(873, 457);
+            this.ClientSize = new System.Drawing.Size(873, 343);
             this.Controls.Add(this.tabControl1);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.txt_value6);
