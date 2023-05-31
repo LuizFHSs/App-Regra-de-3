@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace App_R3
 {
-    internal class Algoritmo_R3
+    internal class Algoritmo
     {
         /*
          * > Primeira Tarefa
@@ -18,29 +18,47 @@ namespace App_R3
 
         public float Simples(bool[] regra, string v1, string v2, string v3, string v4)
         {
+            float value3 = 0;
             float value4 = 0;
             float mult1;
             float mult2;
             float div;
             float result = 0;
 
-            if (v4 == "x")
+            if (v4 == "x" && regra[0]) // regra de tres simples direta
             {
                 value4 = 1;
-            }
-
-            if (regra[0])
-            {
                 mult1 = float.Parse(v1) * value4;
                 mult2 = float.Parse(v2) * float.Parse(v3);
                 div = mult2 / mult1;
-                result = div; 
+                result = div;
             }
             else
             {
-                if(regra[1])
+                if(v3 == "x" && regra[0])
                 {
-                    mult1 = float.Parse(v3) * value4;
+                    value3 = 1;
+                    mult1 = float.Parse(v2) * value3;
+                    mult2 = float.Parse(v1) * float.Parse(v4);
+                    div = mult2 / mult1;
+                    result = div;
+                }
+            }
+
+            if(v4 == "x" && regra[1]) // regra de tres simples inversa
+            {
+                value4 = 1;
+                mult1 = float.Parse(v3) * value4;
+                mult2 = float.Parse(v1) * float.Parse(v2);
+                div = mult2 / mult1;
+                result = div;
+            }
+            else
+            {
+                if(v3 == "x" && regra[1]) 
+                {
+                    value3 = 1;
+                    mult1 = float.Parse(v4) * value3;
                     mult2 = float.Parse(v1) * float.Parse(v2);
                     div = mult2 / mult1;
                     result = div; 

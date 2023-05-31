@@ -56,8 +56,8 @@
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.rb_D = new System.Windows.Forms.RadioButton();
             this.rb_I = new System.Windows.Forms.RadioButton();
+            this.rb_D = new System.Windows.Forms.RadioButton();
             this.groupBox1.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
@@ -177,7 +177,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(743, 208);
+            this.label2.Location = new System.Drawing.Point(517, 204);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(75, 15);
             this.label2.TabIndex = 12;
@@ -186,7 +186,7 @@
             // lbl_result
             // 
             this.lbl_result.AutoSize = true;
-            this.lbl_result.Location = new System.Drawing.Point(824, 208);
+            this.lbl_result.Location = new System.Drawing.Point(598, 204);
             this.lbl_result.Name = "lbl_result";
             this.lbl_result.Size = new System.Drawing.Size(13, 15);
             this.lbl_result.TabIndex = 13;
@@ -323,6 +323,16 @@
             this.tabPage2.Text = "Direta|Inversa";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
+            // rb_I
+            // 
+            this.rb_I.AutoSize = true;
+            this.rb_I.Location = new System.Drawing.Point(6, 31);
+            this.rb_I.Name = "rb_I";
+            this.rb_I.Size = new System.Drawing.Size(167, 19);
+            this.rb_I.TabIndex = 1;
+            this.rb_I.Text = "Inversamente Proporcional";
+            this.rb_I.UseVisualStyleBackColor = true;
+            // 
             // rb_D
             // 
             this.rb_D.AutoSize = true;
@@ -334,16 +344,6 @@
             this.rb_D.TabStop = true;
             this.rb_D.Text = "Diretamente Proporcional";
             this.rb_D.UseVisualStyleBackColor = true;
-            // 
-            // rb_I
-            // 
-            this.rb_I.AutoSize = true;
-            this.rb_I.Location = new System.Drawing.Point(6, 31);
-            this.rb_I.Name = "rb_I";
-            this.rb_I.Size = new System.Drawing.Size(167, 19);
-            this.rb_I.TabIndex = 1;
-            this.rb_I.Text = "Inversamente Proporcional";
-            this.rb_I.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 

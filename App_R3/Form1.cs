@@ -34,7 +34,7 @@ namespace App_R3
         private void btn_Calc_Click(object sender, EventArgs e)
         {
             bool[] state = { rb_D.Checked, rb_I.Checked };
-            Algoritmo_R3 _R3 = new();
+            Algoritmo _R3 = new();
             if(rb_simples.Checked)
             {
                 lbl_result.Text = _R3.Simples(state, txt_value1.Text, txt_value2.Text, txt_value4.Text, txt_value5.Text).ToString();
