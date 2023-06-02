@@ -59,6 +59,7 @@
             this.lbl_stats = new System.Windows.Forms.Label();
             this.cb_Confirm2 = new System.Windows.Forms.CheckBox();
             this.cb_Confirm1 = new System.Windows.Forms.CheckBox();
+            this.label3 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
@@ -67,9 +68,9 @@
             // 
             // btn_Calc
             // 
-            this.btn_Calc.Location = new System.Drawing.Point(374, 260);
+            this.btn_Calc.Location = new System.Drawing.Point(448, 284);
             this.btn_Calc.Name = "btn_Calc";
-            this.btn_Calc.Size = new System.Drawing.Size(75, 23);
+            this.btn_Calc.Size = new System.Drawing.Size(463, 23);
             this.btn_Calc.TabIndex = 2;
             this.btn_Calc.Text = "CALCULAR";
             this.btn_Calc.UseVisualStyleBackColor = true;
@@ -78,9 +79,9 @@
             // btn_Limpar
             // 
             this.btn_Limpar.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.btn_Limpar.Location = new System.Drawing.Point(0, 320);
+            this.btn_Limpar.Location = new System.Drawing.Point(0, 409);
             this.btn_Limpar.Name = "btn_Limpar";
-            this.btn_Limpar.Size = new System.Drawing.Size(950, 23);
+            this.btn_Limpar.Size = new System.Drawing.Size(1071, 23);
             this.btn_Limpar.TabIndex = 3;
             this.btn_Limpar.Text = "LIMPAR CAMPOS";
             this.btn_Limpar.UseVisualStyleBackColor = true;
@@ -89,7 +90,7 @@
             // lbl_GranA
             // 
             this.lbl_GranA.AutoSize = true;
-            this.lbl_GranA.Location = new System.Drawing.Point(475, 69);
+            this.lbl_GranA.Location = new System.Drawing.Point(448, 110);
             this.lbl_GranA.Name = "lbl_GranA";
             this.lbl_GranA.Size = new System.Drawing.Size(15, 15);
             this.lbl_GranA.TabIndex = 4;
@@ -98,7 +99,7 @@
             // lbl_GranB
             // 
             this.lbl_GranB.AutoSize = true;
-            this.lbl_GranB.Location = new System.Drawing.Point(659, 69);
+            this.lbl_GranB.Location = new System.Drawing.Point(632, 110);
             this.lbl_GranB.Name = "lbl_GranB";
             this.lbl_GranB.Size = new System.Drawing.Size(14, 15);
             this.lbl_GranB.TabIndex = 5;
@@ -118,21 +119,21 @@
             // 
             this.txt_value1.BackColor = System.Drawing.SystemColors.Window;
             this.txt_value1.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.txt_value1.Location = new System.Drawing.Point(475, 104);
+            this.txt_value1.Location = new System.Drawing.Point(448, 145);
             this.txt_value1.Name = "txt_value1";
             this.txt_value1.Size = new System.Drawing.Size(100, 23);
             this.txt_value1.TabIndex = 7;
             // 
             // txt_value2
             // 
-            this.txt_value2.Location = new System.Drawing.Point(659, 104);
+            this.txt_value2.Location = new System.Drawing.Point(632, 145);
             this.txt_value2.Name = "txt_value2";
             this.txt_value2.Size = new System.Drawing.Size(100, 23);
             this.txt_value2.TabIndex = 8;
             // 
             // txt_value4
             // 
-            this.txt_value4.Location = new System.Drawing.Point(475, 186);
+            this.txt_value4.Location = new System.Drawing.Point(448, 227);
             this.txt_value4.Name = "txt_value4";
             this.txt_value4.Size = new System.Drawing.Size(100, 23);
             this.txt_value4.TabIndex = 9;
@@ -140,7 +141,7 @@
             // 
             // txt_value5
             // 
-            this.txt_value5.Location = new System.Drawing.Point(659, 186);
+            this.txt_value5.Location = new System.Drawing.Point(632, 227);
             this.txt_value5.Name = "txt_value5";
             this.txt_value5.Size = new System.Drawing.Size(100, 23);
             this.txt_value5.TabIndex = 10;
@@ -150,7 +151,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label1.Location = new System.Drawing.Point(592, 135);
+            this.label1.Location = new System.Drawing.Point(565, 176);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(39, 45);
             this.label1.TabIndex = 11;
@@ -159,7 +160,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(517, 264);
+            this.label2.Location = new System.Drawing.Point(929, 200);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(75, 15);
             this.label2.TabIndex = 12;
@@ -168,7 +169,7 @@
             // lbl_result
             // 
             this.lbl_result.AutoSize = true;
-            this.lbl_result.Location = new System.Drawing.Point(598, 264);
+            this.lbl_result.Location = new System.Drawing.Point(1010, 200);
             this.lbl_result.Name = "lbl_result";
             this.lbl_result.Size = new System.Drawing.Size(13, 15);
             this.lbl_result.TabIndex = 13;
@@ -215,7 +216,7 @@
             this.groupBox1.Controls.Add(this.btn_AddGran);
             this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Controls.Add(this.label5);
-            this.groupBox1.Location = new System.Drawing.Point(12, 121);
+            this.groupBox1.Location = new System.Drawing.Point(77, 145);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(221, 179);
             this.groupBox1.TabIndex = 19;
@@ -241,7 +242,7 @@
             // lbl_GranC
             // 
             this.lbl_GranC.AutoSize = true;
-            this.lbl_GranC.Location = new System.Drawing.Point(838, 69);
+            this.lbl_GranC.Location = new System.Drawing.Point(811, 110);
             this.lbl_GranC.Name = "lbl_GranC";
             this.lbl_GranC.Size = new System.Drawing.Size(15, 15);
             this.lbl_GranC.TabIndex = 20;
@@ -249,14 +250,14 @@
             // 
             // txt_value3
             // 
-            this.txt_value3.Location = new System.Drawing.Point(838, 104);
+            this.txt_value3.Location = new System.Drawing.Point(811, 145);
             this.txt_value3.Name = "txt_value3";
             this.txt_value3.Size = new System.Drawing.Size(100, 23);
             this.txt_value3.TabIndex = 21;
             // 
             // txt_value6
             // 
-            this.txt_value6.Location = new System.Drawing.Point(838, 186);
+            this.txt_value6.Location = new System.Drawing.Point(811, 227);
             this.txt_value6.Name = "txt_value6";
             this.txt_value6.Size = new System.Drawing.Size(100, 23);
             this.txt_value6.TabIndex = 22;
@@ -266,7 +267,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Segoe UI", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label6.Location = new System.Drawing.Point(781, 135);
+            this.label6.Location = new System.Drawing.Point(754, 176);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(39, 45);
             this.label6.TabIndex = 23;
@@ -357,11 +358,22 @@
             this.cb_Confirm1.TabIndex = 0;
             this.cb_Confirm1.UseVisualStyleBackColor = true;
             // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Segoe UI", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label3.Location = new System.Drawing.Point(430, 9);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(481, 86);
+            this.label3.TabIndex = 25;
+            this.label3.Text = "REGRA DE TRÊS";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(950, 343);
+            this.ClientSize = new System.Drawing.Size(1071, 432);
+            this.Controls.Add(this.label3);
             this.Controls.Add(this.tabControl1);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.txt_value6);
@@ -426,5 +438,6 @@
         private CheckBox cb_Confirm2;
         private CheckBox cb_Confirm1;
         private Label lbl_stats;
+        private Label label3;
     }
 }
