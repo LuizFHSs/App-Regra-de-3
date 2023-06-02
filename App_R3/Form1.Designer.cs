@@ -56,9 +56,13 @@
             this.rb_I = new System.Windows.Forms.RadioButton();
             this.rb_D = new System.Windows.Forms.RadioButton();
             this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.lbl_stats = new System.Windows.Forms.Label();
+            this.cb_Confirm2 = new System.Windows.Forms.CheckBox();
+            this.cb_Confirm1 = new System.Windows.Forms.CheckBox();
             this.groupBox1.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
+            this.tabPage2.SuspendLayout();
             this.SuspendLayout();
             // 
             // btn_Calc
@@ -76,7 +80,7 @@
             this.btn_Limpar.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.btn_Limpar.Location = new System.Drawing.Point(0, 320);
             this.btn_Limpar.Name = "btn_Limpar";
-            this.btn_Limpar.Size = new System.Drawing.Size(873, 23);
+            this.btn_Limpar.Size = new System.Drawing.Size(950, 23);
             this.btn_Limpar.TabIndex = 3;
             this.btn_Limpar.Text = "LIMPAR CAMPOS";
             this.btn_Limpar.UseVisualStyleBackColor = true;
@@ -85,7 +89,7 @@
             // lbl_GranA
             // 
             this.lbl_GranA.AutoSize = true;
-            this.lbl_GranA.Location = new System.Drawing.Point(290, 61);
+            this.lbl_GranA.Location = new System.Drawing.Point(475, 69);
             this.lbl_GranA.Name = "lbl_GranA";
             this.lbl_GranA.Size = new System.Drawing.Size(15, 15);
             this.lbl_GranA.TabIndex = 4;
@@ -94,7 +98,7 @@
             // lbl_GranB
             // 
             this.lbl_GranB.AutoSize = true;
-            this.lbl_GranB.Location = new System.Drawing.Point(474, 61);
+            this.lbl_GranB.Location = new System.Drawing.Point(659, 69);
             this.lbl_GranB.Name = "lbl_GranB";
             this.lbl_GranB.Size = new System.Drawing.Size(14, 15);
             this.lbl_GranB.TabIndex = 5;
@@ -112,37 +116,41 @@
             // 
             // txt_value1
             // 
-            this.txt_value1.Location = new System.Drawing.Point(290, 96);
+            this.txt_value1.BackColor = System.Drawing.SystemColors.Window;
+            this.txt_value1.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.txt_value1.Location = new System.Drawing.Point(475, 104);
             this.txt_value1.Name = "txt_value1";
             this.txt_value1.Size = new System.Drawing.Size(100, 23);
             this.txt_value1.TabIndex = 7;
             // 
             // txt_value2
             // 
-            this.txt_value2.Location = new System.Drawing.Point(474, 96);
+            this.txt_value2.Location = new System.Drawing.Point(659, 104);
             this.txt_value2.Name = "txt_value2";
             this.txt_value2.Size = new System.Drawing.Size(100, 23);
             this.txt_value2.TabIndex = 8;
             // 
             // txt_value4
             // 
-            this.txt_value4.Location = new System.Drawing.Point(290, 178);
+            this.txt_value4.Location = new System.Drawing.Point(475, 186);
             this.txt_value4.Name = "txt_value4";
             this.txt_value4.Size = new System.Drawing.Size(100, 23);
             this.txt_value4.TabIndex = 9;
+            this.txt_value4.TextChanged += new System.EventHandler(this.txt_value4_TextChanged);
             // 
             // txt_value5
             // 
-            this.txt_value5.Location = new System.Drawing.Point(474, 178);
+            this.txt_value5.Location = new System.Drawing.Point(659, 186);
             this.txt_value5.Name = "txt_value5";
             this.txt_value5.Size = new System.Drawing.Size(100, 23);
             this.txt_value5.TabIndex = 10;
+            this.txt_value5.TextChanged += new System.EventHandler(this.txt_value5_TextChanged);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label1.Location = new System.Drawing.Point(407, 127);
+            this.label1.Location = new System.Drawing.Point(592, 135);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(39, 45);
             this.label1.TabIndex = 11;
@@ -233,7 +241,7 @@
             // lbl_GranC
             // 
             this.lbl_GranC.AutoSize = true;
-            this.lbl_GranC.Location = new System.Drawing.Point(653, 61);
+            this.lbl_GranC.Location = new System.Drawing.Point(838, 69);
             this.lbl_GranC.Name = "lbl_GranC";
             this.lbl_GranC.Size = new System.Drawing.Size(15, 15);
             this.lbl_GranC.TabIndex = 20;
@@ -241,23 +249,24 @@
             // 
             // txt_value3
             // 
-            this.txt_value3.Location = new System.Drawing.Point(653, 96);
+            this.txt_value3.Location = new System.Drawing.Point(838, 104);
             this.txt_value3.Name = "txt_value3";
             this.txt_value3.Size = new System.Drawing.Size(100, 23);
             this.txt_value3.TabIndex = 21;
             // 
             // txt_value6
             // 
-            this.txt_value6.Location = new System.Drawing.Point(653, 178);
+            this.txt_value6.Location = new System.Drawing.Point(838, 186);
             this.txt_value6.Name = "txt_value6";
             this.txt_value6.Size = new System.Drawing.Size(100, 23);
             this.txt_value6.TabIndex = 22;
+            this.txt_value6.TextChanged += new System.EventHandler(this.txt_value6_TextChanged);
             // 
             // label6
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Segoe UI", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label6.Location = new System.Drawing.Point(596, 127);
+            this.label6.Location = new System.Drawing.Point(781, 135);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(39, 45);
             this.label6.TabIndex = 23;
@@ -270,7 +279,7 @@
             this.tabControl1.Location = new System.Drawing.Point(12, 12);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(221, 87);
+            this.tabControl1.Size = new System.Drawing.Size(391, 87);
             this.tabControl1.TabIndex = 24;
             this.tabControl1.SelectedIndexChanged += new System.EventHandler(this.tabControl1_SelectedIndexChanged);
             // 
@@ -281,7 +290,7 @@
             this.tabPage1.Location = new System.Drawing.Point(4, 24);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(213, 59);
+            this.tabPage1.Size = new System.Drawing.Size(383, 59);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Simples";
             this.tabPage1.UseVisualStyleBackColor = true;
@@ -310,19 +319,49 @@
             // 
             // tabPage2
             // 
+            this.tabPage2.Controls.Add(this.lbl_stats);
+            this.tabPage2.Controls.Add(this.cb_Confirm2);
+            this.tabPage2.Controls.Add(this.cb_Confirm1);
             this.tabPage2.Location = new System.Drawing.Point(4, 24);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(213, 59);
+            this.tabPage2.Size = new System.Drawing.Size(383, 59);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Composta";
             this.tabPage2.UseVisualStyleBackColor = true;
+            // 
+            // lbl_stats
+            // 
+            this.lbl_stats.AutoSize = true;
+            this.lbl_stats.Location = new System.Drawing.Point(156, 23);
+            this.lbl_stats.Name = "lbl_stats";
+            this.lbl_stats.Size = new System.Drawing.Size(38, 15);
+            this.lbl_stats.TabIndex = 2;
+            this.lbl_stats.Text = "label3";
+            // 
+            // cb_Confirm2
+            // 
+            this.cb_Confirm2.AutoSize = true;
+            this.cb_Confirm2.Location = new System.Drawing.Point(6, 34);
+            this.cb_Confirm2.Name = "cb_Confirm2";
+            this.cb_Confirm2.Size = new System.Drawing.Size(15, 14);
+            this.cb_Confirm2.TabIndex = 1;
+            this.cb_Confirm2.UseVisualStyleBackColor = true;
+            // 
+            // cb_Confirm1
+            // 
+            this.cb_Confirm1.AutoSize = true;
+            this.cb_Confirm1.Location = new System.Drawing.Point(6, 6);
+            this.cb_Confirm1.Name = "cb_Confirm1";
+            this.cb_Confirm1.Size = new System.Drawing.Size(15, 14);
+            this.cb_Confirm1.TabIndex = 0;
+            this.cb_Confirm1.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(873, 343);
+            this.ClientSize = new System.Drawing.Size(950, 343);
             this.Controls.Add(this.tabControl1);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.txt_value6);
@@ -348,6 +387,8 @@
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.tabPage1.PerformLayout();
+            this.tabPage2.ResumeLayout(false);
+            this.tabPage2.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -382,5 +423,8 @@
         private TabPage tabPage2;
         private RadioButton rb_D;
         private RadioButton rb_I;
+        private CheckBox cb_Confirm2;
+        private CheckBox cb_Confirm1;
+        private Label lbl_stats;
     }
 }
