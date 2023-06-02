@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.btn_Calc = new System.Windows.Forms.Button();
             this.btn_Limpar = new System.Windows.Forms.Button();
             this.lbl_GranA = new System.Windows.Forms.Label();
@@ -391,6 +392,7 @@
             this.Controls.Add(this.lbl_GranA);
             this.Controls.Add(this.btn_Limpar);
             this.Controls.Add(this.btn_Calc);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
             this.Text = "Regra de Três";
             this.Load += new System.EventHandler(this.Form1_Load);
